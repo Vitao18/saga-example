@@ -10,6 +10,10 @@
   "author": "Victor Feitosa",
   "license": "MIT",
   "dependencies": {
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "babel-loader": "8.0.0-beta.0",
+    "ramda": "^0.25.0",
     "webpack": "^3.11.0"
   }
 }
