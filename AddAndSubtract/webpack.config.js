@@ -28,7 +28,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './index.html',
       title: 'Rect-redux project 1'
-    })
+    }),
+    new webpack.HotModuleReplacementPlugin()
   ],
   output: {
     filename: 'bundle.js',
