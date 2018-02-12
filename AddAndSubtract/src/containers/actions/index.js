@@ -1,5 +1,6 @@
-import SUM from './actionTypes';
+import { ADD, SUB } from './actionTypes';
 
-const AddOrSub = operation => ({ type: SUM, operation });
+const add = () => ({ type: ADD });
+const sub = () => ({ type: SUB });
 
-export default AddOrSub;
+export default { add, sub };
