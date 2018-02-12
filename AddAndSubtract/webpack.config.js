@@ -1,11 +1,10 @@
 const path = require('path');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-  },
   devtool: 'inline-source-map',
   module: {
     rules: [
@@ -20,5 +19,16 @@ module.exports = {
         }
       }
     ]
+  },
+  plugins: [
+    new CleanWebpackPlugin(['dist']),
+    new HtmlWebpackPlugin({
+      template: './index.html',
+      title: 'Rect-redux project 1'
+    })
+  ],
+  output: {
+    filename: 'bundle.js',
+    path: path.join(__dirname, 'dist'),
   }
 };
