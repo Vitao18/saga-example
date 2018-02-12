@@ -4,7 +4,7 @@
   "description": "The objective of this project is to display two buttons on the screen, one to add one and other to subtract one. There should be a initial number displayed and each time the user presses a button, an action must be perfomed accordingly to the button.",
   "main": "index.js",
   "scripts": {
-    "build": "node_modules/.bin/webpack --config webpack.config.js"
+    "serve": "node_modules/.bin/webpack --config webpack.config.js"
   },
   "repository": "https://github.com/Vitao18/redux-study",
   "author": "Victor Feitosa",
