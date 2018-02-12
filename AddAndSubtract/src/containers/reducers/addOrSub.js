@@ -7,7 +7,7 @@ function operate(state = initialState, action) {
     case (ADD):
       return Object.assign({}, state, { counter: state.counter + 1 });
     case (SUB):
-      return Object.assign({}, state, { counter: state.counter + 1 });
+      return Object.assign({}, state, { counter: state.counter - 1 });
     default:
       return state;
   }

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Add = ({ onButtonClick }) => <button onClick={() => onButtonClick('add')}>+ 1</button>;
+const Add = ({ onAddClick }) => <button onClick={() => onAddClick()}>+ 1</button>;
 
 Add.propTypes = {
-  onButtonClick: PropTypes.func.isRequired,
+  onAddClick: PropTypes.func.isRequired,
 };
 
 export default Add;

@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Subtract = ({ onButtonClick }) => <button onClick={() => onButtonClick('sub')}>- 1</button>;
+const Subtract = ({ onSubClick }) => <button onClick={() => onSubClick()}>- 1</button>;
 
 Subtract.propTypes = {
-  onButtonClick: PropTypes.func.isRequired,
+  onSubClick: PropTypes.func.isRequired,
 };
 
 export default Subtract;
