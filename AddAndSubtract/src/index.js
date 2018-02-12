@@ -1,5 +1,8 @@
-import * as R from 'ramda';
+import React from 'react';
+import { render } from 'react-dom';
+import App from './components/App';
 
-const addToTwo = R.add(2);
-
-console.log('A simple sum using some currying', addToTwo(10));
+render(
+  <App />,
+  document.getElementById('root'),
+);
