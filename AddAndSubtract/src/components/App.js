@@ -1,10 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import Counter from './Counter';
+import AddOne from '../containers/AddOne';
+import SubOne from '../containers/SubOne';
 
-const Counter = ({ counter }) => <div>{counter}</div>;
+const App = () => (
+  <div>
+    <Counter />
+    <AddOne />
+    <SubOne />
+  </div>
+);
 
-Counter.propTypes = {
-  counter: PropTypes.number.isRequired,
-};
-
-export default Counter;
+export default App;
