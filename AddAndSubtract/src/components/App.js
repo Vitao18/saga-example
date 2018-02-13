@@ -1,11 +1,11 @@
 import React from 'react';
-import Counter from './Counter';
+import DisplayCounter from '../containers/displayCounter';
 import AddOne from '../containers/AddOne';
 import SubOne from '../containers/SubOne';
 
 const App = () => (
   <div>
-    <Counter />
+    <DisplayCounter />
     <AddOne />
     <SubOne />
   </div>

@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
 import { sub } from './actions';
-import { Sub } from '../components/Add';
+import Sub from '../components/Subtract';
 
-const mapDispatchToProps = dispatch => ({ onClick: dispatch(sub()) });
+const mapDispatchToProps = dispatch => ({ onSubClick: () => dispatch(sub()) });
 
-const SubOne = connect({ mapDispatchToProps })(Sub);
+const SubOne = connect(null, mapDispatchToProps)(Sub);
 
 export default SubOne;

@@ -1,4 +1,4 @@
-import { ADD, SUB } from '../actions';
+import { ADD, SUB } from '../actions/actionTypes';
 
 const initialState = { counter: 0 };
 
