@@ -1,0 +1,9 @@
+{
+  "name": "ToDoList",
+  "version": "1.0.0",
+  "description": "A classical Todo list app using React and Redux.",
+  "main": "index.js",
+  "repository": "https://github.com/Vitao18/redux-study",
+  "author": "Victor Pereira Feitosa",
+  "license": "MIT"
+}
