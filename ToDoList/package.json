@@ -5,5 +5,9 @@
   "main": "index.js",
   "repository": "https://github.com/Vitao18/redux-study",
   "author": "Victor Pereira Feitosa",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.1"
+  }
 }
