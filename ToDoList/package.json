@@ -6,8 +6,13 @@
   "repository": "https://github.com/Vitao18/redux-study",
   "author": "Victor Pereira Feitosa",
   "license": "MIT",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && node_modules/.bin/webpack --config webpack.config.js"
+  },
   "devDependencies": {
     "html-webpack-plugin": "^2.30.1",
+    "rimraf": "^2.6.2",
     "webpack": "^3.11.0",
     "webpack-dev-server": "^2.11.1"
   }
