@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "clean": "rimraf dist",
-    "build": "npm run clean && node_modules/.bin/webpack --config webpack.config.js"
+    "build": "npm run clean && node_modules/.bin/webpack-dev-server --open"
   },
   "devDependencies": {
     "css-loader": "^0.28.9",
@@ -24,6 +24,7 @@
     "@babel/preset-react": "^7.0.0-beta.40",
     "babel-loader": "8.0.0-beta.0",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "^3.1.3"
   }
 }
