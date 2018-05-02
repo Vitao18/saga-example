@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
+const DotEnv = require('dotenv-webpack');
 
 module.exports = {
   entry: ['react-hot-loader/patch', './src/index.js'],
@@ -32,6 +33,7 @@ module.exports = {
     ],
   },
   plugins: [
+    new DotEnv(),
     new webpack.NamedModulesPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
