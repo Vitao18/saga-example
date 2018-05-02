@@ -9,8 +9,14 @@ import rootSaga from './sagas';
 import App from './components/App';
 import reducers from './reducers';
 
-const sagaMiddleware = createSagaMiddleware()
-const store = createStore(reducers, applyMiddleware(sagaMiddleware))
+const sagaMiddleware = createSagaMiddleware();
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(
+  reducers,
+  composeEnhancers(applyMiddleware(sagaMiddleware)),
+);
+
+sagaMiddleware.run(rootSaga);
 
 const render = Component => {
   ReactDOM.render(

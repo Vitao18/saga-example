@@ -23,6 +23,7 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.46",
     "@babel/preset-env": "^7.0.0-beta.40",
     "@babel/preset-react": "^7.0.0-beta.40",
+    "axios": "^0.18.0",
     "babel-loader": "8.0.0-beta.0",
     "dotenv-webpack": "^1.5.5",
     "prop-types": "^15.6.1",

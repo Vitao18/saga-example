@@ -20,7 +20,6 @@ SearchBar.propTypes = {
 };
 
 const handleSubmit = event => dispatch => {
-    console.log('Here');
     event.preventDefault();
     dispatch(actions.fetchWeather())
 }
