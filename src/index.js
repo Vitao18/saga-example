@@ -1,12 +1,16 @@
+import "regenerator-runtime/runtime";
 import React from 'react';
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
+import createSagaMiddleware from 'redux-saga';
+import rootSaga from './sagas';
 import App from './components/App';
 import reducers from './reducers';
 
-const store = createStore(reducers)
+const sagaMiddleware = createSagaMiddleware()
+const store = createStore(reducers, applyMiddleware(sagaMiddleware))
 
 const render = Component => {
   ReactDOM.render(

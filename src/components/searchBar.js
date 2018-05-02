@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
-const SearchBar = ({ onChange, input }) => (
-    <form>
+const SearchBar = ({ onChange, input, onSubmit }) => (
+    <form onSubmit={onSubmit}>
         <input value={input} onChange={onChange} />
         <button type="submit">Submit</button>
     </form>
@@ -19,10 +19,17 @@ SearchBar.propTypes = {
     input: PropTypes.string,
 };
 
+const handleSubmit = event => dispatch => {
+    console.log('Here');
+    event.preventDefault();
+    dispatch(actions.fetchWeather())
+}
+
 const mapStateToProps = (state) => ({ input: state.input });
 
 const mapDispatchToProps = dispatch => ({
     onChange: e => dispatch(actions.changeInput(e.target.value)),
+    onSubmit: (e) => handleSubmit(e)(dispatch),
 });
 
 export default connect(
